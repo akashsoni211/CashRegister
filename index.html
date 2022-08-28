@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cash Register</title>
+</head>
+<body>
+    <header>
+        <h1>Cash Register Manager</h1>
+        <p>Enter the bill amount and cash given by the customer and</br>know minimum number of notes to return.</p>       
+    </header>    
+    <main class="main">  
+    <table class="input_table">
+        <tr>
+            <td><Label>Bill Amount:</Label></td>
+            <td><input type="text" id="billAmount"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td><Label>Cash Given:</Label></td>
+            <td><input type="text" id="cashGiven"></td>
+        </tr>
+    </table>
+    <button class="button" id="submit">Calculate Change</button>
+    <h1 style="margin:.1rem 0rem">Change:</h1>
+    <table style="margin:1rem;" border="1px">
+        <tr class="table-row">
+            <td>No. of Notes</td>
+            <td id="2000">0</td>
+            <td id="500">0</td>
+            <td id="100">0</td>
+            <td id="20">0</td>
+            <td id="10">0</td>
+            <td id="5">0</td>
+            <td id="1">0</td>
+        </tr>
+        <tr class="table-row">
+            <td>Note</td>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+        </tr> 
+    </table>
+    <div>
+        Message:<label id="outputMessage"></label>
+    </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
